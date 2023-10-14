@@ -1,0 +1,14 @@
+/*classes are denoted by - .classname
+id are denoted by #idname*/
+
+.bg-color-yellow{
+    background-color: yellow;
+}
+
+#red{
+    color: red;
+}
+
+#blue{
+    color: blue;
+}
