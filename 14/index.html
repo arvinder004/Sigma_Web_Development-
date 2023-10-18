@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /*Element Seclector*/
+        div {
+            background-color: red;
+        }
+
+        /*Class Selector*/
+        .red {
+            background-color: yellow;
+        }
+
+        /*ID Selector*/
+        #green {
+            background-color: blue;
+        }
+
+        /*Child Selector*/
+        div>p {
+            background-color: beige;
+            color: blue;
+        }
+
+        /*Descendant Selector*/
+        div h1 {
+            background-color: brown;
+            color: pink;
+        }
+
+        /*Universal Selector*/
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Pseudo Selectors*/
+        a :visited{
+            color: yellow;
+        }
+        a :link{
+            color: green;
+        }
+        a :hover{
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        I am a div
+        <P>I am a paragraph inside div</P>
+    </div>
+    <div class="red">
+        I am also div
+    </div>
+    <div id="green">
+        <article>
+        <h1>me too div</h1>
+        </article>
+    </div>
+
+    <a href="https://www.google.com">Go to Google</a>
+</body>
+
+</html>
