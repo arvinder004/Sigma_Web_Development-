@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model</title>
+    <style>
+        .box{
+            background-color: aqua;
+        
+        }
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .box1{
+            color: yellow;
+            padding: 10px;
+            margin: 25px;
+            border: 2px solid blue;
+            height: 100px;
+            box-sizing: border-box;
+            /*with box sizing property the height of box 1 is 100px(given height) including the content + padding + border not the margin*/
+        }
+        .box2{
+            color: red;
+            padding: 10px;
+            margin: 10px;
+            border: 2px solid black;
+            height: 100px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <!--content > padding > border > margin-->
+    
+    <!--CONTENT -> innermost component of the box model is the actual content of the element, it can be text, image, video etc 
+    Content area is defined by the width and height properties.-->
+
+    <!--PADDING -> the space between the actual content and the border of the element is called the padding. Padding area is defined by the property "padding"-->
+
+    <!--BORDER -> the border surrounds the content and padding and gives the visual border of the element. The border properties can be controlled using the "border" keyword-->
+    
+    <!--MARGIN -> the margin is the space outside the element that seperates it from other elements in the layout. The Margin of the element is controlled by the "margin" property-->
+
+    <!-- CALCULATING THE DIMENSIONS OF THE ELEMENT
+    
+    Total Width = width + left border + right border + left padding + right padding + left margin + right margin
+
+    Total Height = height + top padding + bottom padding + top margin + bottom margin + top border + bottom border-->
+
+    <!--MARGIN COLLAPSE -> this concept tells us that is the margin of 2 elements are collapsing or coming together then the maximum margin value will be considered and taken as common-->
+
+    <div class="box box1">I am a box</div>
+
+    <div class="box box2">I am another box</div>
+</body>
+</html>
