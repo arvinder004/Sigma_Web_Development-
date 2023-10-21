@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specificity</title>
+
+    <style>
+        /*CASCADE ALGORITHM*/
+
+        /*1.Position and order of appearance -- the order in which your CSS rules appear*/
+
+        /*2.Specifity Calculation (order of specificity) -- inline style > ID selector > Class or Attribute Selector > Element Selector > Universal Selector*/
+        /*If more than one ID selectors are used then the last one will be preffered */
+
+        /*3.Origin -- the order in which CSS appears and where it comes from, whether that is a browser style, CSS from browser extension, or your authored CSS*/
+
+        /*Importance -- important flag is CSS is uced to give a particular style rule the highest level of importance
+        p{
+            color: red !important;
+        }
+        */
+
+        /*universal selector = 0
+          element selector & pseudo-selector = 1
+          class selector, attribute selector, pseudo class = 10
+          id selector = 100
+          inline styles = 1000*/
+
+          h1.yellow{ /*specificity = 11*/
+            color: yellow;
+          }
+          h1{ /*specificity = 1*/
+            color: blue;
+          }
+
+          a.harryclass.rohan-class[href]:hover{ /*specificiy of this selector is 1 + 10 + 10 +10 +10 = 41*/
+            color: black;
+          }
+    </style>
+</head>
+
+<body>
+    <div ><h1 class="yellow" >Hello World!</h1></div>
+</body>
+
+</html>
