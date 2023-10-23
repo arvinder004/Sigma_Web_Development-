@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,65 +20,79 @@
         
         vmax -> max of height or widht according to the device*/
 
-        *{
+        * {
             margin: 0;
             padding: 0;
         }
 
-        html{
+        html {
             font-size: 12px;
         }
 
-        .box{
+        .box {
             box-sizing: border-box;
             border: 2px solid black;
-            width: 80vw;/*80 percent of total width of device*/
-            height: 10vh;/*10 percent of total height of device*/
+            width: 80vw;
+            /*80 percent of total width of device*/
+            height: 10vh;
+            /*10 percent of total height of device*/
             margin: auto;
             background-color: aquamarine;
 
         }
 
-        .container{
+        .container {
             box-sizing: border-box;
             border: 2px solid black;
             width: 80vw;
             min-height: 80vh;
-            margin: 23px/*height*/ auto/*width*/;
+            margin: 23px
+                /*height*/
+                auto
+                /*width*/
+            ;
             font-size: 18px;
             background-color: aquamarine;
         }
-        .container > div{
+
+        .container>div {
             font-size: 2em;
             border: 2px solid black;
             width: 50%;
         }
-        .container > div > div{
+
+        .container>div>div {
             border: 2px solid black;
             width: 50%;
         }
-        .mycont{
+
+        .mycont {
             border: 2px solid black;
             box-sizing: border-box;
             margin: 23px auto;
-            color: rgb(0, 0,0);
+            color: rgb(0, 0, 0);
             font-size: 22px;
             width: 80vw;
         }
     </style>
 </head>
+
 <body>
     <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Values_and_Units -->
-    
+
     <div class="box">
         This is a box
     </div>
 
     <div class="container">
         <div>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, facilis modi? Suscipit accusamus, obcaecati repellat harum in debitis explicabo consectetur odit qui iusto nobis labore similique consequatur laudantium dicta voluptatem optio cum? Ratione ut a officiis magni aliquam voluptates? Harum laboriosam nisi in. Temporibus vel, assumenda, quos optio expedita ipsum vero recusandae pariatur ullam commodi quod.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, facilis modi? Suscipit accusamus,
+            obcaecati repellat harum in debitis explicabo consectetur odit qui iusto nobis labore similique consequatur
+            laudantium dicta voluptatem optio cum? Ratione ut a officiis magni aliquam voluptates? Harum laboriosam nisi
+            in. Temporibus vel, assumenda, quos optio expedita ipsum vero recusandae pariatur ullam commodi quod.
 
-            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque molestiae expedita recusandae, qui maiores et autem deleniti quasi voluptatem pariatur repellendus quam possimus, enim corporis.
+            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque molestiae expedita recusandae, qui
+                maiores et autem deleniti quasi voluptatem pariatur repellendus quam possimus, enim corporis.
             </div>
         </div>
     </div>
@@ -85,4 +100,5 @@
     <div class="mycont">I am another container</div>
 
 </body>
+
 </html>
