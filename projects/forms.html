@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Form</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Poppins:wght@200&display=swap" rel="stylesheet">
+    
+    <style>
+        *{
+            background-color:beige;
+            text-align: ;
+        }
+        .form{
+            border: 2px solid brown;
+            align-items: center;
+        }
+        .title{
+            background-color: rgb(11, 218, 149);
+            margin: auto;
+            width: 80vw;
+            height: 10vh;
+            border: 2px solid black;
+            box-sizing: border-box;
+            text-align: center;
+            font-size: 30px;
+            font-family: 'Oswald', sans-serif;
+            }
+        .name{
+            color: blue;
+            font-family:'poppins', 'Arial Narrow', Arial, sans-serif;
+            font-size: large;
+            font-weight: 1000;
+        }
+        .name1{
+            color: black;
+            border: 2px solid rgb(207, 41, 99);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .name2{
+            color: black ;
+            border: 2px solid rgb(207, 41, 99); 
+            text-align: center;  
+        }
+        .address{
+            color: blue;
+            font-family:'poppins', 'Arial Narrow', Arial, sans-serif;
+            font-size: large;
+            font-weight: 1000;
+
+        }
+            
+
+    </style>
+</head>
+<body>
+    <div class="title">Student Form</div>
+    <br>
+    <hr width="50%" color="red" size="4px" align="center" />
+    <br>
+    <form action="post" class="form">
+        
+        <label for="name" class="name">NAME&nbsp&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" class="name1">
+        <br>
+        <label for="f_name" class="name">FATHER'S NAME&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" class="name1">
+        <br>
+        <label for="m_name" class="name">MOTHER'S NAME&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" class="name1">
+        <br>
+        <label for="email" class="name">EMAIL ADDRESS&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="email" class="name1">
+        <br>
+        <label for="address" class="address">ADDRESS</label>
+        <textarea name="address" id="address" class="name2" cols="30" rows="10"></textarea>
+    </form>
+</body>
+</html>
