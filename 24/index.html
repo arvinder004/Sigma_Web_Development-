@@ -13,42 +13,53 @@
     }
 
     .box {
-        height: 130px;
+        height: 1300px;
         width: 60vw;
         padding: 3px;
         margin: 3px;
-        border: 2px solid yellow;
+        border: 2px solid red;
+        position: relative;
+
     }
 
     .parent{
         margin: 35px;
         padding: 45px;
         border: 3px solid red;
-        
+        position: relative;
     }
 
     .box1 {
-        background-color: blue;
-        position: relative;
-        right: px;
+        background-color: rgb(137, 137, 224);
+        position: sticky; /*if the page scrolls it remains on that position only*/
+        top: 0px;
+        height: 100px;
+        width: 100%;
+        z-index: 1;
     }
 
     .box2 {
         background-color: aqua;
-        position: relative;
-        right: -150px;
+        height: 100px;
+        width: 100%;
+        right: 8vw;
+        bottom: 0px;
     }
 
     .box3 {
         background-color: aquamarine;
-        position: relative;
-        right: -300px;
+        /* position: fixed; */
+        bottom: 0px;
+        left: 8vw;
+        height: 100px;
+        width: 100%;
     }
 
     .box4 {
         background-color:pink;
-        position: relative;
-        right: -450px;
+        z-index: 0;
+        height: 100px;
+        width: 100%;
     }
 
     /*RELATIVE POSITION -: move the element anywhere in the page top bottom left right bring the element on top or bottom of another usin z-index(the more z-index the top the element*/
@@ -59,10 +70,10 @@
 <body>
     <div class="parent">
 
-        <div class="box box1"></div>
-        <div class="box box2"></div>
-        <div class="box box3"></div>
-        <div class="box box4"></div>
+        <div class="box box1">box 1</div>
+        <div class="box box2">box 2</div>
+        <div class="box box3">box 3</div>
+        <div class="box box4">box 4</div>
 
     </div>
 
