@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS card design</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Oswald:wght@500&family=Poppins:wght@200&display=swap');
+
+        *{
+            margin: 0;
+        }
+        body {
+            background-color: gray;
+            padding: 45px;
+        }
+
+        .card {
+            background-color: white;
+            height: 350px;
+            width: 198px;
+            border-radius: 7px;
+        }
+
+        .image {
+            padding: 5px;
+        }
+
+        .image img {
+            border-radius: 7px;
+        }
+
+        .content {
+            padding: 13px;
+        margin-left: -3px;
+        margin-top: 5px;
+        }
+
+        .content h1 {
+            font-size: 20px;
+        }
+
+        .content p {
+            font-size: 11px;
+            font-family: 'Montserrat', sans-serif;
+            font-family: 'Oswald', sans-serif;
+            font-family: 'Poppins', sans-serif;
+            font-weight:bold;
+            color: gray;
+        }
+
+        .capsules {
+            padding: 0 20px 0px 12px;
+            margin-top: -7px;
+            margin-bottom: -7px;
+            
+        }
+
+        .capsules span {
+            border: 2px solid rgba(128, 128, 128, 0.373);
+            padding: 1px 5px;
+            border-radius: 20px;
+            font-size: 9px;
+            font-family: 'Montserrat', sans-serif;
+            font-family: 'Oswald', sans-serif;
+            font-family: 'Poppins', sans-serif;
+            font-weight:bold;
+            color: gray;
+            cursor: pointer;
+        }
+        .more{
+            text-align: center;
+        }
+        .more button{
+            padding: 5px 10px;
+            font-size: 8px;
+            border-radius: 13px;
+            border: 2px solid lightblue;
+            background-color: lightblue;
+            color: rgb(5, 13, 230);
+            cursor: pointer;
+        }
+        .more button:hover{
+            background-color: cadetblue;
+            color: aquamarine;
+        }
+
+        .capsules span:hover{
+            background-color: cadetblue;
+            color: aquamarine;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="card">
+
+        <div class="image">
+            <img width="188px" height=""
+                src="https://imgs.search.brave.com/eyLafZxTBEUHH54W0wRNS2XtPVwWeieRJQ4u4zhnj6k/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9jZG4u/cGl4YWJheS5jb20v/cGhvdG8vMjAxMy8w/Ny8xOC8xMC81Ni9y/YWlscm9hZC0xNjM1/MThfNjQwLmpwZw"
+                alt="">
+        </div>
+
+        <div class="capsules">
+            <span>Nature</span>
+            <span>Lake</span>
+        </div>
+
+        <div class="content">
+            <h1>Lorem, ipsum dolor.</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia ipsum nesciunt ex, est necessitatibus
+                distinctio aliquam odio non animi fugit molestias in at repellendus doloribus!</p>
+        </div>
+        <div class="more">
+            <button>Read More</button>
+        </div>
+
+    </div>
+</body>
+
+</html>
