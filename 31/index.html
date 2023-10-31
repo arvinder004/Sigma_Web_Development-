@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>more on CSS Selectors</title>
+    <style>
+        /* .box:first-child//.box agar parent ka first child hai toh apply hoga{
+            background-color: red;
+        } */
+
+        .box::first-line {
+            /*applies only to first line*/
+            color: red;
+        }
+
+        .box::first-letter {
+            color: gold;
+            font-size: 40px;
+        }
+
+        .boxes * {
+            border: 2px solid black;
+        }
+
+        [data-color="primary"] {
+            margin-top: 10px;
+        }
+
+        .box:nth-child(2) {
+            background-color: blue;
+        }
+
+        .boxes::before {
+            /*insert content dynamically */
+            content: "hello world";
+        }
+
+        /* .boxes::after {
+            content: "hello arvinder i am world";
+        } */
+
+        input::placeholder{
+            color: purple;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="boxes">
+        <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos nemo laudantium nam sapiente cum,
+            labore soluta iure tenetur culpa est corrupti illo, laborum nisi modi commodi dignissimos quas excepturi.
+            Expedita omnis vel perspiciatis soluta repellendus repudiandae praesentium debitis similique ullam natus
+            nemo architecto quas, veritatis ipsam doloribus fugiat, necessitatibus aut culpa, velit est dolore tempore
+            ex! Nam neque debitis voluptatem quisquam ipsa asperiores suscipit praesentium doloremque culpa, quasi earum
+            cupiditate doloribus quas adipisci dolorum ea iusto temporibus ad minima nostrum at veritatis! Neque nemo,
+            eum incidunt iure debitis non omnis deleniti laborum quaerat ad numquam at et aspernatur blanditiis, unde
+            quos distinctio sint inventore illum, molestias obcaecati consequatur reiciendis necessitatibus quibusdam!
+            Possimus suscipit minus optio, modi corrupti quia quibusdam perferendis hic nostrum! Aliquid quam corrupti
+            quas est repudiandae cumque distinctio nam alias, unde beatae. Qui minus, alias velit corporis facere at
+            minima deserunt aut laboriosam eveniet atque? Ipsum voluptatum enim a ipsam nisi vitae odio minima provident
+            blanditiis quaerat sit aliquam architecto, fugit autem, quae deleniti quia nulla? Iste quas cumque illum
+            commodi numquam. Quos dignissimos saepe magni facere ratione quae iste minus, beatae provident
+            necessitatibus ut sint odit? Velit veritatis recusandae assumenda ea, eum alias voluptatem fugit distinctio
+            quisquam.</div>
+        <div class="box">Hey I am a box</div>
+        <div class="box" data-color="primary">Hey I am a box</div>
+
+        <input type="text" placeholder="enter your name here">
+    </div>
+</body>
+
+</html>
