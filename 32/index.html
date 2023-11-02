@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXERCISE 5</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Oswald:wght@500&family=Playpen+Sans:wght@300&family=Poppins:wght@200&display=swap');
+    </style>
+    <style>
+        /*navigation bar -- sticky
+        icon -- bottom right -- always (not sticky)*/
+
+
+        :root {
+            --primcolor: rgb(171, 103, 235);
+            --primocolor1: rgba(103, 235, 204, 0.575);
+            --primocolor2: rgba(136, 212, 13, 0.575);
+            --contentback: rgb(114, 75, 95);
+            --bodyback: rgb(55, 96, 50);
+
+        }
+
+        body {
+            background-color: var(--bodyback);
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        header {
+            position: sticky;
+            top: 0px;
+            z-index: 1;
+
+        }
+
+        nav {
+            width: 100vw;
+            margin: auto;
+            background-color: var(--primcolor);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            position: relative;
+
+        }
+
+        nav ul {
+            display: flex;
+            width: 90vw;
+            margin: auto;
+        }
+
+        nav ul li {
+            list-style: none;
+            /*display: inline;*/
+            font-weight: bolder;
+            margin: auto;
+            padding: 17px;
+        }
+
+        .container {
+            background-color: var(--contentback);
+            width: 80vw;
+            height: 500px;
+            margin: auto;
+            margin-top: 70px;
+            padding: 10px;
+        }
+
+        .box {
+            width: 40%;
+            height: 80%;
+        }
+
+
+        .box1 {
+            background-color: var(--primocolor1);
+            float: left;
+            margin: 5% 0% 0% 8%;
+        }
+
+        .box2 {
+            background-color: var(--primocolor2);
+            float: right;
+            margin: 5% 8% 0% 0%;
+        }
+
+        p {
+            padding: 10px;
+            font-size: 21px;
+            font-family: 'Playpen Sans', cursive;
+        }
+
+        .text {
+            box-sizing: border-box;
+            background-color: var(--contentback);
+            border: 2px solid black;
+            border-radius: 51px;
+            width: 70vw;
+            height: 100px;
+            margin: auto;
+            margin-top: 70px;
+            margin-bottom: 70px;
+            padding: 7px 20px 20px;
+            font-size: 35px;
+            font-style: italic;
+        }
+
+        .span1 {
+            display: inline-block;
+            margin: 2px 2px 2px 2px;
+            padding: 19px 12px 19px 12px;
+        }
+
+        .foot {
+            box-sizing: border-box;
+            margin: auto;
+            padding: 13px;
+            width: 100vw;
+            height: 70px;
+            background-color: var(--primcolor);
+            font-size: ;
+        }
+
+        .logo {
+            position: fixed;
+            bottom: 0px;
+            right: 0px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Services</li>
+                <li>Contact Us</li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="box box1">
+
+        </div>
+        <div class="box box2">
+
+        </div>
+    </div>
+
+    <div class="text">
+        <span class="span1">Welcome to this Sigma Web Development Express</span>
+    </div>
+
+    <footer class="foot">
+
+    </footer>
+
+    <img src="https://imgs.search.brave.com/vFv1Ok2Rkqb1oCF2CjY5_ZQwmiSbDBOkHtgGRq_Ok7Y/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9wbmdp/bWcuY29tL3VwbG9h/ZHMvY2lyY2xlL3Nt/YWxsL2NpcmNsZV9Q/Tkc4NC5wbmc"
+        alt="logo" width="100px" class="logo">
+
+</body>
+
+</html>
