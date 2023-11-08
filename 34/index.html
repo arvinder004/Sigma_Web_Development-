@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        /*grid track - space between 2 grid lines
+        grid area - area inside grid between rows and columns */
+        .container{
+            border: 2px solid black;
+            display: grid;
+            /* grid-template-columns: [first] 120px [second] 100px [third];/*add columns here 2 columns naming inside[]*/
+            /*grid-template-rows: 100px 100px 100px; */
+            padding: 10px;
+            width: 80vw;
+            grid-template-columns:1fr 1fr 1fr ;/*fr- fraction here writtem 3 times so parts of 3*/
+            row-gap: 20px;
+            column-gap: 30px;
+
+        }
+        .item{
+            margin: 10px;
+            border: 2px solid blue;
+            height: 55px;
+            /* width: 55px; */
+        }
+        .item4{
+            grid-row: first/second; /*start from 1 and end at 2*/
+            /* grid-row-start: 1;
+            grid-row-end: 2; */
+        
+            grid-column: 1/2; /*start from 1 and end at 2*/ 
+        }
+        .item1{
+            grid-row: 1/2; /*start from 1 and end at 2*/
+            grid-column: 1/2; /*start from 1 and end at 2*/ 
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+        <div class="item item4">4</div>
+        <div class="item item5">5</div>
+    </div>
+    
+</body>
+</html>
