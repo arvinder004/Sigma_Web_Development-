@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .aside {
+            height: 100vh;
+            width: 25vw;
+            background-color: rgb(208, 208, 185);
+            position: fixed;
+
+        }
+
+        .name {
+            font-size: xx-large;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        section {
+            padding: 10px 95px;
+            height: 100vh;
+            width: 60vw;
+            position: fixed;
+            left: 23%;
+            background-color: #d7d7d7;
+            font-family: 'Raleway', sans-serif;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: baseline;
+            gap: 20px;
+        }
+
+        .text {
+            text-align: left;
+            font-size: small;
+            /* border: 2px solid; */
+            width: 50vw;
+        }
+
+        .icons>ul {
+            display: flex;
+            justify-content: right;
+            align-items: left;
+        }
+
+        .icons>ul>li {
+            list-style: none;
+            padding: 10PX;
+            cursor: pointer;
+        }
+
+        .img {
+            height: 170px;
+            width: 170px;
+            border: 2px solid;
+            border-radius: 89px;
+            background-color: red;
+            position: fixed;
+            left: 15%;
+            top:34%;
+        }
+        .img>img{
+            height: inherit;
+            width: inherit;
+            border-radius: inherit;
+            object-fit: fill;
+        }
+    </style>
+</head>
+
+<body>
+
+    <aside>
+        <div class="aside">
+
+        </div>
+    </aside>
+    <section>
+        <div class="name">
+            ARVINDER SINGH DHOUL
+        </div>
+        <div class="text">
+            <p> In line with my curiosity in every field of technology and my desire to become professional in software,
+                I make an effort to learn new things every day.</p>
+
+        </div>
+        <div class="icons">
+            <ul>
+                <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2 6L8.91302 9.91697C11.4616 11.361 12.5384 11.361 15.087 9.91697L22 6"
+                            stroke="#141B34" stroke-width="1.5" stroke-linejoin="round" />
+                        <path
+                            d="M2.01577 13.4756C2.08114 16.5412 2.11383 18.0739 3.24496 19.2094C4.37608 20.3448 5.95033 20.3843 9.09883 20.4634C11.0393 20.5122 12.9607 20.5122 14.9012 20.4634C18.0497 20.3843 19.6239 20.3448 20.7551 19.2094C21.8862 18.0739 21.9189 16.5412 21.9842 13.4756C22.0053 12.4899 22.0053 11.5101 21.9842 10.5244C21.9189 7.45886 21.8862 5.92609 20.7551 4.79066C19.6239 3.65523 18.0497 3.61568 14.9012 3.53657C12.9607 3.48781 11.0393 3.48781 9.09882 3.53656C5.95033 3.61566 4.37608 3.65521 3.24495 4.79065C2.11382 5.92608 2.08114 7.45885 2.01576 10.5244C1.99474 11.5101 1.99475 12.4899 2.01577 13.4756Z"
+                            stroke="#141B34" stroke-width="1.5" stroke-linejoin="round" />
+                    </svg>
+                </li>
+                <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 10V17" stroke="#141B34" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M11 13V17M11 13C11 11.3431 12.3431 10 14 10C15.6569 10 17 11.3431 17 13V17M11 13V10"
+                            stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M7.00801 7L6.99902 7" stroke="#141B34" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path
+                            d="M2.5 12C2.5 7.52166 2.5 5.28249 3.89124 3.89124C5.28249 2.5 7.52166 2.5 12 2.5C16.4783 2.5 18.7175 2.5 20.1088 3.89124C21.5 5.28249 21.5 7.52166 21.5 12C21.5 16.4783 21.5 18.7175 20.1088 20.1088C18.7175 21.5 16.4783 21.5 12 21.5C7.52166 21.5 5.28249 21.5 3.89124 20.1088C2.5 18.7175 2.5 16.4783 2.5 12Z"
+                            stroke="#141B34" stroke-width="1.5" stroke-linejoin="round" />
+                    </svg>
+                </li>
+                <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M9.50389 18.9109C9.50389 18.9109 8 18.9109 6.5 16.9117M14.0588 22V17.6759C14.0588 17.3125 13.9506 16.9966 13.7762 16.7112C13.6566 16.5155 13.7385 16.2377 13.9547 16.1763C15.7447 15.6681 17 14.851 17 12.1406C17 11.4359 16.7764 10.7734 16.3834 10.1968C16.1879 9.90984 16.1928 9.9364 16.2746 9.59719C16.4183 9.00067 16.4298 8.37225 16.2692 7.78605C16.2164 7.59335 16.1032 7.48096 15.8983 7.50266C15.6326 7.53081 15.1725 7.65663 14.49 8.09692C14.2219 8.26992 14.0878 8.35642 13.9697 8.37577C13.8516 8.39512 13.6938 8.35459 13.378 8.27353C12.9463 8.16268 12.5014 8.10318 12 8.10318C11.4986 8.10318 11.0537 8.16268 10.622 8.27353C10.3062 8.35459 10.1484 8.39512 10.0303 8.37577C9.9122 8.35642 9.77813 8.26992 9.50999 8.09692C8.82753 7.65663 8.3674 7.53081 8.10166 7.50266C7.8968 7.48096 7.78361 7.59335 7.73081 7.78605C7.57017 8.37225 7.58167 9.00069 7.72543 9.5972C7.80718 9.93642 7.81213 9.90984 7.61654 10.1968C7.22356 10.7734 7 11.4359 7 12.1406C7 14.851 8.25526 15.6681 10.0453 16.1763C10.2615 16.2377 10.3434 16.5155 10.2238 16.7112C10.0494 16.9966 9.94118 17.3125 9.94118 17.6759V22"
+                            stroke="#141B34" stroke-width="1.5" />
+                        <circle cx="12" cy="12" r="10" stroke="#141B34" stroke-width="1.5" stroke-linejoin="round" />
+                    </svg>
+                </li>
+                <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M7 17L11.1935 12.8065M17 7L12.8065 11.1935M12.8065 11.1935L9.77778 7H7L11.1935 12.8065M12.8065 11.1935L17 17H14.2222L11.1935 12.8065"
+                            stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z"
+                            stroke="#141B34" stroke-width="1.5" />
+                    </svg>
+                </li>
+                <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="15" cy="12" r="3" stroke="#141B34" stroke-width="1.5" stroke-linejoin="round" />
+                        <path
+                            d="M9 21C10.6569 21 12 19.6569 12 18V15H9C7.34315 15 6 16.3431 6 18C6 19.6569 7.34315 21 9 21Z"
+                            stroke="#141B34" stroke-width="1.5" stroke-linejoin="round" />
+                        <path d="M12 9V15H9C7.34315 15 6 13.6569 6 12C6 10.3431 7.34315 9 9 9H12Z" stroke="#141B34"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M12 3V9H9C7.34315 9 6 7.65685 6 6C6 4.34315 7.34315 3 9 3H12Z" stroke="#141B34"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M12 3V9H15C16.6569 9 18 7.65685 18 6C18 4.34315 16.6569 3 15 3H12Z" stroke="#141B34"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </li>
+                <li>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M2.5 12C2.5 7.52166 2.5 5.28249 3.89124 3.89124C5.28249 2.5 7.52166 2.5 12 2.5C16.4783 2.5 18.7175 2.5 20.1088 3.89124C21.5 5.28249 21.5 7.52166 21.5 12C21.5 16.4783 21.5 18.7175 20.1088 20.1088C18.7175 21.5 16.4783 21.5 12 21.5C7.52166 21.5 5.28249 21.5 3.89124 20.1088C2.5 18.7175 2.5 16.4783 2.5 12Z"
+                            stroke="#141B34" stroke-width="1.5" stroke-linejoin="round" />
+                        <path
+                            d="M16.5 12C16.5 14.4853 14.4853 16.5 12 16.5C9.51472 16.5 7.5 14.4853 7.5 12C7.5 9.51472 9.51472 7.5 12 7.5C14.4853 7.5 16.5 9.51472 16.5 12Z"
+                            stroke="#141B34" stroke-width="1.5" />
+                        <path d="M17.5078 6.5L17.4988 6.5" stroke="#141B34" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+
+                </li>
+            </ul>
+        </div>
+        <div class="img">
+            <img src="86292141-removebg-preview.png" alt="">
+        </div>
+    </section>
+</body>
+
+</html>
