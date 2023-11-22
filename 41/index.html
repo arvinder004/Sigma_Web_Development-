@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Object-fit and Object-cover</title>
+    <style>
+        .container{
+            height: 334px;
+            width: 488px;
+            border: 4px solid black;
+        }
+        .container>img{
+            height: inherit;
+            width: inherit;
+            /* object-fit: cover; */
+            /* object-fit: contain;*/
+            /* object-position:top; */
+            /* object-fit:scale-down; */
+            object-position: 20px 30px;
+            object-fit: contain;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://imgs.search.brave.com/d-UiZQU9W9FhAAEzdCTOFpkzf9KvD8jvPjV3gZP20wE/rs:fit:560:320:1/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy90/aHVtYi9iL2I2L0lt/YWdlX2NyZWF0ZWRf/d2l0aF9hX21vYmls/ZV9waG9uZS5wbmcv/NjQwcHgtSW1hZ2Vf/Y3JlYXRlZF93aXRo/X2FfbW9iaWxlX3Bo/b25lLnBuZw" alt="">
+    </div>
+</body>
+</html>
