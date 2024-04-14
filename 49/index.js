@@ -31,6 +31,15 @@ console.log(friend.slice(1,3))
 console.log(friend.slice(4))
 console.log(friend.slice(1))
 
-console.log(friend.replace("vi","69"))
+console.log(friend.replace("vi","69")) //only replaces the first occurence not the second third....
 
 
+a = "arvinder bhai"
+console.log(a.replace("bhai","boss"))
+
+b = " don " 
+
+console.log(a.concat(b))
+
+console.log(b)
+console.log(b.trim())
