@@ -17,3 +17,5 @@ else{
 console.log("your number is " + a)
 
 document.title = "hey i am good"
+
+document.body.style.backgroundColor = "red"
