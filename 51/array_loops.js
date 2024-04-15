@@ -64,4 +64,4 @@ let arr2 = [1,2,3,4,5,6]
 const red = (a,b)=>{
     return a*b
 }
-console.log(arr2.reduce(red))  //returns a number by applying function to all elements in the array
+console.log(arr2.reduce(red))  //returns a number by applying function to all elements in the array 
