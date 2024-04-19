@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>set timeout</title>
+    <style>
+        .child{
+            background-color: aliceblue;
+            margin: 15px;
+            padding: 15px;
+            border: 2px solid black;
+            cursor: pointer;
+        }
+        .childcontainer{
+            background-color: bisque;
+            margin: 15px;
+            padding: 15px;
+            border: 2px solid black;
+            cursor: progress;
+        }
+        .container{
+            background-color: blue;
+            margin: 15px;
+            padding: 15px;
+            border: 2px solid black;
+            cursor: alias;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section class="childcontainer">
+            <div class="child">
+                i am a child
+            </div>
+        </section>
+    </div>
+
+    <div class="container container1" style="color: white;">
+        i will change my color in 1 second
+    </div>
+
+    <script>
+
+        function getRandomColor(){
+            let val1 = Math.ceil(0+Math.random()*255)
+            let val2 = Math.ceil(0+Math.random()*255)
+            let val3 = Math.ceil(0+Math.random()*255)
+
+            return `rgb(${val1},${val2},${val3})`
+        }
+
+        setInterval(() => {
+            document.querySelector(".child").style.backgroundColor = getRandomColor()
+            document.querySelector(".child").style.Color = getRandomColor()
+
+            document.querySelector(".childcontainer").style.backgroundColor = getRandomColor()
+            document.querySelector(".container").style.backgroundColor = getRandomColor()
+
+        },100);
+        
+        setTimeout(()=>{
+            document.querySelector(".container1").style.backgroundColor = getRandomColor()
+        },1000)
+
+    </script>
+</body>
+</html>
