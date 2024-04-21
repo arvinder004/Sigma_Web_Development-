@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Function Sequence</title>
+</head>
+<body>
+
+    <div class="container">
+        <p>the result of the calculation is :</p>
+        <p id="demo"></p>
+    </div>
+
+    <script>
+        function display(s){
+            document.getElementById("demo").innerHTML = s;
+        }
+
+        function myCalculator(num1 , num2){
+            let sum = num1 + num2;
+            return sum;
+        }
+
+        let result = myCalculator(5,5);
+        display(result);
+    </script>
+</body>
+</html>
