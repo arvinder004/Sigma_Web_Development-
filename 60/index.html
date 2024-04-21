@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALLBACK FUNCTIONS</title>
+</head>
+
+<body>
+
+    <script>
+
+        console.log("harry is a hacker")
+        console.log("rohan is a hecker")
+
+        setTimeout(() => { //it is an asynchronous function and js will delay its execution
+            console.log("set time out")
+        }, 2000);
+
+        setTimeout(() => {
+            console.log("set time out 2")
+        }, 3000);
+
+        console.log("the end")
+
+        const fn = () => {
+            console.log("nothing")
+        }
+
+        const callback = (arg,fn) => {
+            console.log(arg)
+            fn()
+        }
+
+        const loadScript = (src, callback) => {
+            let sc = document.createElement("script");
+            sc.src = src;
+            sc.onload = callback("arvinder",fn)
+            document.head.append(sc)
+        }
+
+        loadScript("script.js", callback)
+
+    </script>
+</body>
+
+</html>
