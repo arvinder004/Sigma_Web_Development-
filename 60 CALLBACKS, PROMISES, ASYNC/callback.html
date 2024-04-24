@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>callbacks</title>
+</head>
+
+<body>
+    A CALLBACK FUNTION IS A FUNCTION PASSSED INTO ANOTHER FUNCTION AS AN ARGUMENT WHICH IS THEN INVOKED INSIDE THE OUTER FUNCTION TO COMPLETE AN ACTION
+    <script>
+
+        //synchronous programming
+        // let a = prompt("what is your name?")
+        // let b = prompt("what is your age?")
+        // let c = prompt("what is your favourite color?")
+        // console.log(a + " is " + b + " years old and " + c + " is his favourite color")
+
+        //asynchronous programming
+        // console.log("start")
+        
+        // setTimeout(() => { //this is aynchronous hence it will run in background
+        //    console.log("hey i am good"); 
+        // }, 3000);
+        
+        // console.log("start")
+
+
+        //CALLBACKS
+        function loadscript(src, callback){
+            let script = document.createElement("script")
+            script.src = src;
+            script.onload = function(){
+                console.log("loadedd script with SRC:" + src)
+                callback;
+            }
+            document.body.appendChild(script);
+        }
+
+        function hello(){
+            console.log("hello")
+        }
+
+        function goodmorning(){
+            console.log("good morning")
+        }
+
+        loadscript("https://code.jquery.com/jquery-3.3.1.slim.min.js",hello());
+        loadscript("https://code.jquery.com/jquery-3.3.1.slim.min.js",goodmorning());
+
+
+    </script>
+</body>
+
+</html>

@@ -26,7 +26,7 @@ let prom1 = new Promise((resolve, reject) => {
   }
 })
 
-prom1.then((a) => {
+prom1.then((a) => { // then() mthod provides 2 callbacks: one function to return when a promise is fullfiled and one to run when a promise is rejected
     console.log(a)
 }).catch((err)=>{
     console.log(err)
