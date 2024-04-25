@@ -33,21 +33,29 @@
             script.src = src;
             script.onload = function(){
                 console.log("loadedd script with SRC:" + src)
-                callback;
+                callback(null,src);
+            }
+            script.onerror = function() {
+                console.log("error loading script with SRC: " + src);
+                callback(new Error("src got some error"));
             }
             document.body.appendChild(script);
         }
 
-        function hello(){
-            console.log("hello")
+        function hello(error, src){
+            if(error){
+                console.log(error)
+                return
+            }
+            console.log("hello world" + src)
         }
 
-        function goodmorning(){
-            console.log("good morning")
+        function goodmorning(src){
+            console.log("good morning" + src)
         }
 
-        loadscript("https://code.jquery.com/jquery-3.3.1.slim.min.js",hello());
-        loadscript("https://code.jquery.com/jquery-3.3.1.slim.min.js",goodmorning());
+        loadscript("https://code.jquery.com/jquery-3.3.1.slim.min.js",hello);
+        loadscript("https://code.jquery.com/jquery-3.3.1.slim.min.js",goodmorning);
 
 
     </script>
