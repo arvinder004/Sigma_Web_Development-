@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALLBACK HELL & PYRAMID OF DOOM</title>
+</head>
+<body>
+    
+    <script>
+        function loadscript(src, callback){
+            let script = document.createElement("script");
+            script.src = src;
+            script.onload() = function {
+                console.log("loaded script with src" + src)
+                callback(src);
+            }
+        }
+
+        function goodmorning(error, src){
+            if(error){
+                console.log(error)
+                sendemergencymsgtoCEO();
+                return
+            }
+            alert("good morning" + src);
+        }
+
+        loadscript("https://code.jquery.com/jquery-3.3.1.slim.min.js",goodmorning)
+
+        // step1(function(value 1){
+        //     step2(function(value 2){
+        //         step3(function(value 3){
+        //             step4(function(value 4){
+        //                 step5(function(value 5){
+        //                     step6(function(value 6){
+        //                         step7(function(value 7){
+        //                             step8(function(value 8){
+            
+        //                             })
+        //                         })
+        //                     })
+        //                 })
+        //             })
+        //         })
+        //     })
+        // })
+
+    </script>
+</body>
+</html>
