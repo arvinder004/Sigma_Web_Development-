@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROMISES .then() and .catch()</title>
+</head>
+<body>
+    
+    <pre>
+        resolve and reject are two callbacks provided by javascript itself
+        they are called like this:
+        resolve(value) -> if the job is finished successfully
+        reject(error) -> if the job fails
+
+        The promise object returned by the new promise constructor has these properties:
+        1>. STATE : Initially pending, then changes to either "fulfilled" when resolve is called OR "rejected" when reject is called.
+
+        2>. RESULT : Initially undefined, then changes to value if resolved [resolve(value)] or error[rejected(error)] when rejected.
+    </pre>
+    
+    <script>
+        let p1 = new Promise((resolve, reject)=>{
+            console.log("promise is pending")
+            setTimeout(()=>{
+                alert("i am a promise and i am resolved")
+                console.log("i am a promise and i am resolved")
+
+                resolve(true)
+                //reject(new Error("i am an error")) //used to throw new error in js
+            }, 5000)
+        })
+
+        let p2 = new Promise((resolve, reject)=>{
+            console.log("promise is pending")
+            setTimeout(()=>{
+                alert("i am a promise and i am rejected")
+                console.log("i am a promise and i am rejected")
+
+                //resolve(true)
+                reject(new Error("i am an error")) //used to throw new error in js
+            }, 5000)
+        })
+
+        console.log(p1)
+        console.log(p2)
+
+        //both p1 and p2 will not take 10 seconds to execute...both will start executing parallely and will return the result after 5 seconds
+        
+
+        //to get the value
+        p1.then((value)=>{
+            console.log(value)
+        })
+        
+        //to catch the error
+        p2.catch((error)=>{
+            console.log("some error")  //it will not display the error msg in the console
+        })
+
+        // p2.then((value)=>{
+        //     console.log(value)
+        // },(error)=>{
+        //     console.log(error)
+        // })
+    </script>
+</body>
+</html>
