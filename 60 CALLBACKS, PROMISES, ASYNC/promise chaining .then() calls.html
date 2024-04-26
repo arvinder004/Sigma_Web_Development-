@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROMISES CHAINING .then() calls</title>
+</head>
+<body>
+    <pre>
+        <b>
+        we can use promise chaining and make them pass the resolved values to one another like this
+        
+        p.then(function(result)=>{
+            alert(result);
+            return 2;
+        }).then(.....)
+
+        the idea is to paas the result through the chain of .then() handlers
+        
+        every call to .then() returns a new promise whose value is passed to the next one and so on 
+        
+        we can create custom promises inside .then()
+        </b>
+    </pre>
+
+    
+    <script>
+        // let p1 = new Promise((resolve, reject) => {
+        //     setTimeout(() => {
+        //         console.log("resolved after 2 seconds")
+        //         resolve(56);
+        //     }, 2000);
+        // })
+
+        // p1.then((value) => {
+        //     console.log(value)
+        //     let p2 = new Promise((resolve, reject) => {
+        //         setTimeout(() => {
+        //             resolve("promise 2")
+        //         }, 2000);
+        //     })
+        //     return p2;
+        // }).then((value)=>{
+        //     console.log("we are done ")
+        //     return 2
+        // }).then((value)=>{
+        //     console.log("now we are done " + value)
+        // })
+
+        // loadscript function using promises
+        const loadscript = (src) => {
+            return new Promise(resolve =>{
+                let script = document.createElement("script")
+                script.type = "text/javascript"
+                script.src = src
+                document.body.appendChild(script)
+                script.onload = ()=>{
+                    resolve(1)
+                }
+                script.onerror = ()=>{
+                    reject(0)                
+                }
+            })
+        }
+
+        let p1 = loadscript("https://code.jquery.com/jquery-3.3.1.slim.min.js")
+        p1.then((value)=>{
+            console.log(value)
+        }, (error)=>{
+            console.log(error)
+        })
+
+    </script>
+</body>
+</html>
