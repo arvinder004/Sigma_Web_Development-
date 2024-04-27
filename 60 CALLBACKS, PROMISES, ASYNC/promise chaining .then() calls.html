@@ -7,20 +7,20 @@
 </head>
 <body>
     <pre>
-        <b>
         we can use promise chaining and make them pass the resolved values to one another like this
         
+    <b>
         p.then(function(result)=>{
             alert(result);
             return 2;
         }).then(.....)
+    </b>
 
         the idea is to paas the result through the chain of .then() handlers
         
         every call to .then() returns a new promise whose value is passed to the next one and so on 
         
         we can create custom promises inside .then()
-        </b>
     </pre>
 
     
